@@ -22,7 +22,7 @@ Example:
     PFN: {{data.displayName | first}}
     SN : {{data.sn | first}}
     UID: {{data.netid | first}}
-    $ pipenv run ./jinja2test.py ./test.json ./test.jinja2 
+    $ pipenv run ./jinja2test.py ./test.jinja2 ./test.json
 
     GN : Carl
     PFN: 
