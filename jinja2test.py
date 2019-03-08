@@ -2,10 +2,10 @@
 
 from __future__ import print_function
 import argparse
-import json
 import os
 import os.path
 import sys
+import commentjson as json
 import jinja2
 
 
@@ -18,7 +18,7 @@ def run(args):
     t = jinja2_env.from_string(args.template.read())
     args.template.close()
     o = json.load(args.json)
-    print(t.render(data=o)
+    print(t.render(data=o))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Test a jinja2 template.")
